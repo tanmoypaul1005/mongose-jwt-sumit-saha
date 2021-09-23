@@ -1,0 +1,26 @@
+C:\Program Files\MongoDB\Server\5.0\data\
+
+
+Read the data
+db.project.find({)).pretty()
+db.project.findOne({)) //pretty use kora jaibo na
+
+Category
+db.project.find({category:'phone'})
+
+limit
+db.project.find({)).find(10)
+db.project.find({)).find(10).skip(1)
+
+
+Filter
+db.project.find({category:'phone'},{price:0})
+
+Update
+db.project.updateOne({name:'phone'},{}$set:{price:1200})
+db.project.updateMany({},{$set:{active:true}})
+
+
+Delate
+db.project.deleteOne({name :'iphone 4'})
+db.project.deleteMnay({category:'phone'})
